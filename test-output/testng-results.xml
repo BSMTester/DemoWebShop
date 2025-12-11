@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-07T13:48:40 IST" name="Default suite" finished-at="2025-12-07T13:48:59 IST" duration-ms="19087">
+  <suite started-at="2025-12-11T18:58:30 IST" name="Default suite" finished-at="2025-12-11T18:58:47 IST" duration-ms="16999">
     <groups>
     </groups>
-    <test started-at="2025-12-07T13:48:40 IST" name="Default test" finished-at="2025-12-07T13:48:59 IST" duration-ms="19087">
-      <class name="com.demowebshop.TestCases.sampleTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.sampleTest@702657cc]" started-at="2025-12-07T13:48:40 IST" name="setup" finished-at="2025-12-07T13:48:49 IST" duration-ms="8165" status="PASS">
+    <test started-at="2025-12-11T18:58:30 IST" name="Default test" finished-at="2025-12-11T18:58:47 IST" duration-ms="16999">
+      <class name="com.demowebshop.TestCases.OpenBrouser">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-11T18:58:30 IST" name="setup" finished-at="2025-12-11T18:58:41 IST" duration-ms="11075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test()[pri:0, instance:com.demowebshop.TestCases.sampleTest@702657cc]" started-at="2025-12-07T13:48:49 IST" name="test" finished-at="2025-12-07T13:48:59 IST" duration-ms="10115" status="PASS">
+        <test-method signature="openChrome()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-11T18:58:41 IST" name="openChrome" finished-at="2025-12-11T18:58:47 IST" duration-ms="5176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.sampleTest@702657cc]" started-at="2025-12-07T13:48:59 IST" name="tearDown" finished-at="2025-12-07T13:48:59 IST" duration-ms="657" status="PASS">
+        </test-method> <!-- openChrome -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-11T18:58:47 IST" name="tearDown" finished-at="2025-12-11T18:58:47 IST" duration-ms="604" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.TestCases.sampleTest -->
+      </class> <!-- com.demowebshop.TestCases.OpenBrouser -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
