@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-11T18:58:30 IST" name="Default suite" finished-at="2025-12-11T18:58:47 IST" duration-ms="16999">
+  <suite started-at="2025-12-12T11:07:46 IST" name="Default suite" finished-at="2025-12-12T11:08:07 IST" duration-ms="21218">
     <groups>
     </groups>
-    <test started-at="2025-12-11T18:58:30 IST" name="Default test" finished-at="2025-12-11T18:58:47 IST" duration-ms="16999">
+    <test started-at="2025-12-12T11:07:46 IST" name="Default test" finished-at="2025-12-12T11:08:07 IST" duration-ms="21218">
       <class name="com.demowebshop.TestCases.OpenBrouser">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-11T18:58:30 IST" name="setup" finished-at="2025-12-11T18:58:41 IST" duration-ms="11075" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-12T11:07:46 IST" name="setup" finished-at="2025-12-12T11:07:57 IST" duration-ms="10820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openChrome()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-11T18:58:41 IST" name="openChrome" finished-at="2025-12-11T18:58:47 IST" duration-ms="5176" status="PASS">
+        <test-method signature="openFirefox()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-12T11:07:57 IST" name="openFirefox" finished-at="2025-12-12T11:08:02 IST" duration-ms="5791" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openChrome -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-11T18:58:47 IST" name="tearDown" finished-at="2025-12-11T18:58:47 IST" duration-ms="604" status="PASS">
+        </test-method> <!-- openFirefox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.OpenBrouser@702657cc]" started-at="2025-12-12T11:08:02 IST" name="tearDown" finished-at="2025-12-12T11:08:07 IST" duration-ms="4450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

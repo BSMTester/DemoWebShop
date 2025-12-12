@@ -7,7 +7,7 @@ import com.demowebshop.Base.BaseTest;
 public class OpenBrouser extends BaseTest{
 	
 	@Test
-	public void openChrome() {
+	public void openFirefox() {
 		driver.get("https://demowebshop.tricentis.com/");
 	}
 
