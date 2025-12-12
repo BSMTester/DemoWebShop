@@ -1,0 +1,51 @@
+pipeline{
+	agent any
+
+	environment {
+	MAVEN_HOME = "/user/share/maven"
+	}
+	stages{
+		stage('Checkout'){
+			steps{
+				echo 'Checking out code from GitHub...'
+				git branch: 'master', url: 'https://github.com/Madhu-smb/DemoWebShop.git'
+			}
+		}
+		stage('Build'){
+			steps{
+				echo 'Building DemoWebShop Project...'
+				sh 'mvn clean install -DskipTests'
+			}
+		}
+		stage('Test'){
+			steps{
+				echo 'Running unit tests...'
+				sh 'mvn test'
+			}
+			post{
+				always{
+					junit '**/target/surefire-reports/*.xml'
+				}
+			}
+		}
+		stage('Archive Artifacts'){
+			steps{
+				echo 'Archive Artifacts...'
+				archiveArtifacts artifacts: '**/target/*.jar', fingerprint:true
+			}
+		}
+		stage('Deploy'){
+			steps{
+				echo 'Deploy stage -customize as needed'
+			}
+		}
+	}
+	post{
+		success{
+			echo 'Pipeline completed succesfully!'
+		}
+		failure{
+			echo 'Pipeline failed. Check logs.'
+		}
+	}
+ }
