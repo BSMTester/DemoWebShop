@@ -41,6 +41,9 @@ pipeline{
 		}
 	}
 	post{
+		always{
+			JiraSendBuildInfo()
+		}
 		success{
 			echo 'Pipeline completed succesfully!'
 		}
