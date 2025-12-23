@@ -18,6 +18,7 @@ public class BaseTest {
 		
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
+		driver.get("https://demowebshop.tricentis.com/register");
 	}
 	
 	@AfterMethod
