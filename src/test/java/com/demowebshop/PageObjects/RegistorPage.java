@@ -105,4 +105,13 @@ public class RegistorPage {
 	public String getRegistrationSuccussfulMessgae(){
 		return  wait.until(ExpectedConditions.visibilityOf(registrationSuccessfulMsg)).getText();
 	}
+
+	public void mandatoryFiledsResgisterUser(String fname, String lname, String emailId,
+											 String pasword, String cpasword){
+		enterFirstName(fname);
+		enterLastName(lname);
+		enterEmail(emailId);
+		enterPassWord(pasword);
+		enterConfirmPassword(cpasword);
+	}
 }
