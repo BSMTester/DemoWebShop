@@ -21,4 +21,19 @@ public class RegistrationTest extends BaseTest {
         registorPage.mandatoryFiledsResgisterUser("Rama", "Krishna", "ramakrish"+System.currentTimeMillis()+"@gmail.com","Tester@123", "Tester@123");
         Assert.assertEquals(registorPage.getRegistrationSuccussfulMessgae(), "Register", "user not Registered");
     }
+    
+    @Test(description = "XRAY-DEM-80", priority = 3)
+    public void tc_ValidEmailIdandInvalidPassword() {
+    	RegistorPage registorPage = new RegistorPage(driver);
+    	registorPage.selectGender("femaile");
+    	registorPage.enterFirstName("Srinivas");
+    	registorPage.enterLastName("venkat");
+    	registorPage.enterEmail("venkatSrinivas89@gmail.com");
+    	registorPage.enterPassWord("Srini");
+    	registorPage.enterConfirmPassword("Srini");
+    	registorPage.clickRegisterButton();
+    	String passErrMsg = registorPage.getPaswordLengthErrMessage();
+    	String expectPassErrorMsg = "The password should have at least 6 characters.";
+    	Assert.assertEquals(passErrMsg, expectPassErrorMsg, "Password filed error not displayed");
+    }
 }

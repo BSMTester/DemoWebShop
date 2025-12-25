@@ -49,6 +49,10 @@ public class RegistorPage {
 	@FindBy(xpath = "//h1[text()='Register']")
 	WebElement registrationSuccessfulMsg;
 
+	@FindBy(xpath = "//span[@for='Password']")
+	WebElement passwordErrMsg;
+	
+	
 	public void selectGender(String gender){
 		if(gender.equalsIgnoreCase("male")){
 			wait.until(ExpectedConditions.elementToBeClickable(genderMale)).click();
@@ -90,6 +94,10 @@ public class RegistorPage {
 	public void clickRegisterButton(){
 		wait.until(ExpectedConditions.elementToBeClickable(Register_button));
 		Register_button.click();
+	}
+	
+	public String getPaswordLengthErrMessage() {
+		return passwordErrMsg.getText();
 	}
 
 	public void registerUser(String gender, String fname, String lname, String emailId,
