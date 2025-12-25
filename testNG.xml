@@ -1,0 +1,7 @@
+<suite name = "Automation Suite">
+    <test name = "Registration">
+        <classes>
+            <class name = "com.demowebshop.TestCases.RegistrationTest"/>
+        </classes>
+    </test>
+</suite>
