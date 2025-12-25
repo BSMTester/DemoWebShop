@@ -2,31 +2,34 @@ pipeline{
 	agent any
 
 	environment {
-	MAVEN_HOME = "/user/share/maven"
+	//MAVEN_HOME = "/user/share/maven"
+	JIRA_SITE = 'bsmmobile18.atlassian.net'
 	}
 	stages{
 		stage('Checkout'){
 			steps{
 				echo 'Checking out code from GitHub...'
-				git branch: 'master', url: 'https://github.com/Madhu-smb/DemoWebShop.git'
+				//git branch: 'master', url: 'https://github.com/Madhu-smb/DemoWebShop.git'
+				checkout scm
 			}
 		}
 		stage('Build'){
 			steps{
 				echo 'Building DemoWebShop Project...'
-				sh 'mvn clean install -DskipTests'
+				//sh 'mvn clean install -DskipTests'
+				sh 'mvn clean compile'
 			}
 		}
 		stage('Test'){
 			steps{
-				echo 'Running unit tests...'
+				echo 'Running tests...'
 				sh 'mvn test'
 			}
-			post{
-				always{
-					junit '**/target/surefire-reports/*.xml'
-				}
-			}
+			//post{
+			//	always{
+			//		junit '**/target/surefire-reports/*.xml'
+			//	}
+			//}
 		}
 		stage('Archive Artifacts'){
 			steps{
@@ -41,14 +44,16 @@ pipeline{
 		}
 	}
 	post{
-		always{
-			JiraSendBuildInfo()
-		}
+		//always{
+		//	JiraSendBuildInfo()
+		//}
 		success{
 			echo 'Pipeline completed succesfully!'
+			jiraSendBuildInfo site: 'bsmmobile18.atlassian.net'	
 		}
 		failure{
 			echo 'Pipeline failed. Check logs.'
+			jiraSendBuildInfo site: 'bsmmobile18.atlassian.net'
 		}
 	}
  }
