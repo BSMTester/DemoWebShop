@@ -49,6 +49,9 @@ public class RegistorPage {
 	@FindBy(xpath = "//h1[text()='Register']")
 	WebElement registrationSuccessfulMsg;
 
+	@FindBy(xpath = "//span[@for='Email']")
+	WebElement emailErrMsg;
+
 	@FindBy(xpath = "//span[@for='Password']")
 	WebElement passwordErrMsg;
 	
@@ -95,7 +98,11 @@ public class RegistorPage {
 		wait.until(ExpectedConditions.elementToBeClickable(Register_button));
 		Register_button.click();
 	}
-	
+
+	public String getEmailErrMessage(){
+		return wait.until(ExpectedConditions.visibilityOf(emailErrMsg)).getText();
+	}
+
 	public String getPaswordLengthErrMessage() {
 		return passwordErrMsg.getText();
 	}

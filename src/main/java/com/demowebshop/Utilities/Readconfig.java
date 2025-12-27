@@ -41,7 +41,15 @@ public class Readconfig {
 	}
 	
 	public String getEmail() {
-		return prop.getProperty("Email");
+		String str = prop.getProperty("Email");
+		str = str + System.currentTimeMillis()+".gmail.com";
+		return str;
+	}
+
+	public String getInvalidEmail() {
+		String str = prop.getProperty("Email");
+		str = str + System.currentTimeMillis()+".ail.com";
+		return str;
 	}
 	
 	public String getPassword() {
@@ -60,5 +68,7 @@ public class Readconfig {
 		return prop.getProperty("LoginPassword");
 	}
 	
-
+	public String getEmailErrMsg(){
+		return prop.getProperty("EmailErrMsg");
+	}
 }
