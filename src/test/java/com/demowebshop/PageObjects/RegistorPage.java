@@ -54,9 +54,6 @@ public class RegistorPage {
 
 	@FindBy(xpath = "//span[@for='Password']")
 	WebElement passwordErrMsg;
-
-	@FindBy(xpath = "//span[@for='Email']")
-	WebElement emailErrMsg;
 	
 	public void selectGender(String gender){
 		if(gender.equalsIgnoreCase("male")){
@@ -101,18 +98,15 @@ public class RegistorPage {
 		Register_button.click();
 	}
 
-<<<<<<< Updated upstream
 	public String getEmailErrMessage(){
 		return wait.until(ExpectedConditions.visibilityOf(emailErrMsg)).getText();
 	}
 
-=======
 	public String getEmailErrmsg(){
 		//wait.until(ExpectedConditions.visibilityOf(emailErrMsg));
 		return emailErrMsg.getText();
 	}
-	
->>>>>>> Stashed changes
+
 	public String getPaswordLengthErrMessage() {
 		return passwordErrMsg.getText();
 	}

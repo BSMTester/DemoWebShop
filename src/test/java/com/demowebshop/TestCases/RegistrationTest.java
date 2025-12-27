@@ -57,11 +57,8 @@ public class RegistrationTest extends BaseTest {
 		registorPage.enterConfirmPassword(readconfig.getConfirmPassword());
 		registorPage.clickRegisterButton();
 		String ExpectedResult = readconfig.getEmailErrMsg();
-<<<<<<< Updated upstream
-		String ActualResult = registorPage.getEmailErrMessage();
-=======
 		String ActualResult = registorPage.getEmailErrmsg();
->>>>>>> Stashed changes
+
 		Assert.assertEquals(ActualResult,ExpectedResult,"Invalid email error" );
 	}
 }

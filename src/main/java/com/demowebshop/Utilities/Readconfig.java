@@ -42,17 +42,7 @@ public class Readconfig {
 	
 	public String getEmail() {
 		String str = prop.getProperty("Email");
-<<<<<<< Updated upstream
 		str = str + System.currentTimeMillis()+".gmail.com";
-		return str;
-	}
-
-	public String getInvalidEmail() {
-		String str = prop.getProperty("Email");
-		str = str + System.currentTimeMillis()+".ail.com";
-=======
-		str = str + System.currentTimeMillis()+"@gmail.com";
->>>>>>> Stashed changes
 		return str;
 	}
 
