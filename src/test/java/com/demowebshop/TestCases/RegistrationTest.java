@@ -36,4 +36,6 @@ public class RegistrationTest extends BaseTest {
     	String expectPassErrorMsg = "The password should have at least 6 characters.";
     	Assert.assertEquals(passErrMsg, expectPassErrorMsg, "Password filed error not displayed");
     }
+
+
 }
