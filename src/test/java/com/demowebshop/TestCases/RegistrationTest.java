@@ -52,16 +52,12 @@ public class RegistrationTest extends BaseTest {
 		registorPage.selectGender(readconfig.getFemaleGendor());
 		registorPage.enterFirstName(readconfig.getFirstName());
 		registorPage.enterLastName(readconfig.getLastName());
-		registorPage.enterEmail(readconfig.getInvalidEmail());
+		registorPage.enterEmail(readconfig.getInvalidEmail());	
 		registorPage.enterPassWord(readconfig.getPassword());
 		registorPage.enterConfirmPassword(readconfig.getConfirmPassword());
 		registorPage.clickRegisterButton();
 		String ExpectedResult = readconfig.getEmailErrMsg();
-<<<<<<< Updated upstream
-		String ActualResult = registorPage.getEmailErrMessage();
-=======
 		String ActualResult = registorPage.getEmailErrmsg();
->>>>>>> Stashed changes
 		Assert.assertEquals(ActualResult,ExpectedResult,"Invalid email error" );
 	}
 }
