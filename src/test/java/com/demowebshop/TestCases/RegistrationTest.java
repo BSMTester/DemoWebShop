@@ -58,6 +58,7 @@ public class RegistrationTest extends BaseTest {
 		registorPage.clickRegisterButton();
 		String ExpectedResult = readconfig.getEmailErrMsg();
 		String ActualResult = registorPage.getEmailErrmsg();
+		
 		Assert.assertEquals(ActualResult,ExpectedResult,"Invalid email error" );
 	}
 }

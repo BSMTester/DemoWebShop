@@ -46,7 +46,7 @@ public class Readconfig {
 		str = str + System.currentTimeMillis()+".gmail.com";
 		return str;
 	}
-	
+
 	public String getInvalidEmail(){
 		String str = prop.getProperty("Email");
 		str = str + System.currentTimeMillis()+"il.om";

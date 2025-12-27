@@ -96,11 +96,15 @@ public class RegistorPage {
 		Register_button.click();
 	}
 
+	public String getEmailErrMessage(){
+		return wait.until(ExpectedConditions.visibilityOf(emailErrMsg)).getText();
+	}
+
 	public String getEmailErrmsg(){
 		//wait.until(ExpectedConditions.visibilityOf(emailErrMsg));
 		return emailErrMsg.getText();
 	}
-	
+
 	public String getPaswordLengthErrMessage() {
 		return passwordErrMsg.getText();
 	}
