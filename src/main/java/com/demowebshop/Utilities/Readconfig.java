@@ -10,7 +10,7 @@ public class Readconfig {
 	Properties prop;
 	
 	public Readconfig() {
-		File file = new File("./DemoWebShop/config.properties");
+		File file = new File("./config.properties");
 	try{
 			FileInputStream fis = new FileInputStream(file);
 			prop = new Properties();
