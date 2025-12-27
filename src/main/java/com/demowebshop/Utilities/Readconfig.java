@@ -41,9 +41,27 @@ public class Readconfig {
 	}
 	
 	public String getEmail() {
-		return prop.getProperty("Email");
+		String str = prop.getProperty("Email");
+<<<<<<< Updated upstream
+		str = str + System.currentTimeMillis()+".gmail.com";
+		return str;
 	}
-	
+
+	public String getInvalidEmail() {
+		String str = prop.getProperty("Email");
+		str = str + System.currentTimeMillis()+".ail.com";
+=======
+		str = str + System.currentTimeMillis()+"@gmail.com";
+>>>>>>> Stashed changes
+		return str;
+	}
+
+	public String getInvalidEmail(){
+		String str = prop.getProperty("Email");
+		str = str + System.currentTimeMillis()+"il.om";
+		return str;
+	}
+
 	public String getPassword() {
 		return prop.getProperty("Password");
 	}
@@ -60,5 +78,7 @@ public class Readconfig {
 		return prop.getProperty("LoginPassword");
 	}
 	
-
+	public String getEmailErrMsg(){
+		return prop.getProperty("EmailErrMsg");
+	}
 }

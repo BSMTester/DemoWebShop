@@ -3,7 +3,7 @@ package com.demowebshop.TestCases;
 import com.demowebshop.Base.BaseTest;
 import com.demowebshop.PageObjects.BasePage;
 import com.demowebshop.PageObjects.RegistorPage;
-import org.openqa.selenium.WebDriver;
+import com.demowebshop.Utilities.Readconfig;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,7 +15,7 @@ public class RegistrationTest extends BaseTest {
 		BasePage bp = new BasePage(driver);
 		bp.clickRegisterLink();
 	}
-	
+
     @Test(description = "XRAY-DEM-67", priority = 1)
     public void TC_Register_with_valid_data(){
         RegistorPage registorPage = new RegistorPage(driver);
@@ -29,7 +29,7 @@ public class RegistrationTest extends BaseTest {
         registorPage.mandatoryFiledsResgisterUser("Rama", "Krishna", "ramakrish"+System.currentTimeMillis()+"@gmail.com","Tester@123", "Tester@123");
         Assert.assertEquals(registorPage.getRegistrationSuccussfulMessgae(), "Register", "user not Registered");
     }
-    
+
     @Test(description = "XRAY-DEM-80", priority = 3)
     public void tc_ValidEmailIdandInvalidPassword() {
     	RegistorPage registorPage = new RegistorPage(driver);
@@ -45,5 +45,23 @@ public class RegistrationTest extends BaseTest {
     	Assert.assertEquals(passErrMsg, expectPassErrorMsg, "Password filed error not displayed");
     }
 
-
+	@Test(description = "XRAY-DEM-81", priority = 4)
+	public void tc_InvalidEmailandValidPassword(){
+		RegistorPage registorPage = new RegistorPage(driver);
+		Readconfig readconfig = new Readconfig();
+		registorPage.selectGender(readconfig.getFemaleGendor());
+		registorPage.enterFirstName(readconfig.getFirstName());
+		registorPage.enterLastName(readconfig.getLastName());
+		registorPage.enterEmail(readconfig.getInvalidEmail());
+		registorPage.enterPassWord(readconfig.getPassword());
+		registorPage.enterConfirmPassword(readconfig.getConfirmPassword());
+		registorPage.clickRegisterButton();
+		String ExpectedResult = readconfig.getEmailErrMsg();
+<<<<<<< Updated upstream
+		String ActualResult = registorPage.getEmailErrMessage();
+=======
+		String ActualResult = registorPage.getEmailErrmsg();
+>>>>>>> Stashed changes
+		Assert.assertEquals(ActualResult,ExpectedResult,"Invalid email error" );
+	}
 }
