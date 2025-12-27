@@ -15,7 +15,7 @@ public class RegistrationTest extends BaseTest {
 		BasePage bp = new BasePage(driver);
 		bp.clickRegisterLink();
 	}
-	
+
     @Test(description = "XRAY-DEM-67", priority = 1)
     public void TC_Register_with_valid_data(){
         RegistorPage registorPage = new RegistorPage(driver);
@@ -29,7 +29,7 @@ public class RegistrationTest extends BaseTest {
         registorPage.mandatoryFiledsResgisterUser("Rama", "Krishna", "ramakrish"+System.currentTimeMillis()+"@gmail.com","Tester@123", "Tester@123");
         Assert.assertEquals(registorPage.getRegistrationSuccussfulMessgae(), "Register", "user not Registered");
     }
-    
+
     @Test(description = "XRAY-DEM-80", priority = 3)
     public void tc_ValidEmailIdandInvalidPassword() {
     	RegistorPage registorPage = new RegistorPage(driver);
@@ -57,7 +57,11 @@ public class RegistrationTest extends BaseTest {
 		registorPage.enterConfirmPassword(readconfig.getConfirmPassword());
 		registorPage.clickRegisterButton();
 		String ExpectedResult = readconfig.getEmailErrMsg();
+<<<<<<< Updated upstream
 		String ActualResult = registorPage.getEmailErrMessage();
+=======
+		String ActualResult = registorPage.getEmailErrmsg();
+>>>>>>> Stashed changes
 		Assert.assertEquals(ActualResult,ExpectedResult,"Invalid email error" );
 	}
 }
