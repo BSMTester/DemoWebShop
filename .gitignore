@@ -1,0 +1,21 @@
+<<<<<<< HEAD
+target/
+=======
+#Maven / Java
+traget/
+*.class
+
+#Test Reports
+test.output/
+
+#IDE files
+.idea/
+*.iml
+
+#OS files
+.DS_Store
+Thumbs.db
+
+#Logs
+*.log
+>>>>>>> 3c85d9d (add .gitignore to ignore build and IDE file)

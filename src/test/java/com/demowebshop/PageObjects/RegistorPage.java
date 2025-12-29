@@ -2,10 +2,8 @@ package com.demowebshop.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -49,10 +47,12 @@ public class RegistorPage {
 	@FindBy(xpath = "//h1[text()='Register']")
 	WebElement registrationSuccessfulMsg;
 
+	@FindBy(xpath = "//span[@for='Email']")
+	WebElement emailErrMsg;
+
 	@FindBy(xpath = "//span[@for='Password']")
 	WebElement passwordErrMsg;
-	
-	
+
 	public void selectGender(String gender){
 		if(gender.equalsIgnoreCase("male")){
 			wait.until(ExpectedConditions.elementToBeClickable(genderMale)).click();
@@ -95,7 +95,16 @@ public class RegistorPage {
 		wait.until(ExpectedConditions.elementToBeClickable(Register_button));
 		Register_button.click();
 	}
-	
+
+	public String getEmailErrMessage(){
+		return wait.until(ExpectedConditions.visibilityOf(emailErrMsg)).getText();
+	}
+
+	public String getEmailErrmsg(){
+		//wait.until(ExpectedConditions.visibilityOf(emailErrMsg));
+		return emailErrMsg.getText();
+	}
+
 	public String getPaswordLengthErrMessage() {
 		return passwordErrMsg.getText();
 	}
