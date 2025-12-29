@@ -17,7 +17,7 @@ pipeline{
 			steps{
 				echo 'Building DemoWebShop Project...'
 				//sh 'mvn clean install -DskipTests'
-				sh 'mvn clean compile'
+				bat 'mvn clean compile'
 			}
 		}
 		stage('Test'){
