@@ -1,6 +1,5 @@
 package com.demowebshop.Dataproviders;
 
-import com.demowebshop.Utilities.ExcelRederUtil;
 import com.demowebshop.Utilities.ExcelUtil;
 import org.testng.annotations.DataProvider;
 
@@ -8,7 +7,7 @@ public class LoginDataProvider {
 
     @DataProvider (name = "LoginData")
     public static Object[][] getLoginData(){
-         String XLPath = System.getProperty("user.dir") +"src/test/Resources/TestData/Test Data of DemoWebShop.xls";
+         String XLPath = System.getProperty("user.dir") + "/src/test/Resources/TestData/Test Data of DemoWebShop.xls";
         ExcelUtil.setExcelFile(XLPath, "Login Data");
         int rowCount = ExcelUtil.getRowCount();
         int colCount = ExcelUtil.getColumnCount();

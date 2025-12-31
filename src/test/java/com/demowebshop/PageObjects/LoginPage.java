@@ -28,7 +28,7 @@ public class LoginPage {
     @FindBy(xpath = "//input[@value='Log in']")
     WebElement LoginButton;
 
-    @FindBy(xpath = "//li[text()='No customer account found']")
+    @FindBy(xpath = "//span[contains(text(), 'Login was unsuccessful.')]")
     WebElement LoginError;
 
     @FindBy(xpath = "//span[@for='Email']")
@@ -51,7 +51,7 @@ public class LoginPage {
     }
 
     public String getLoginErrMsg(){
-        wait.until(ExpectedConditions.elementToBeSelected(LoginError));
+        wait.until(ExpectedConditions.visibilityOf(LoginError));
         return LoginError.getText();
     }
 
