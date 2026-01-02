@@ -13,6 +13,7 @@ public class LoginPage {
 
     WebDriver driver;
     WebDriverWait wait;
+    
     public LoginPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -47,16 +48,17 @@ public class LoginPage {
     }
 
     public void clickLoginButton(){
+    	wait.until(ExpectedConditions.elementToBeClickable(LoginButton));
         LoginButton.click();
     }
 
     public String getLoginErrMsg(){
-        wait.until(ExpectedConditions.visibilityOf(LoginError));
+        //wait.until(ExpectedConditions.visibilityOf(LoginError));
         return LoginError.getText();
     }
 
     public String getInvalidMailErrMsg(){
-        wait.until(ExpectedConditions.elementToBeSelected(invalidEmailErr));
+    //    wait.until(ExpectedConditions.elementToBeSelected(invalidEmailErr));
         return invalidEmailErr.getText();
     }
 
