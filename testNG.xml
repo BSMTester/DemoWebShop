@@ -1,7 +1,8 @@
 <suite name = "Automation Suite">
     <test name = "Registration">
         <classes>
-            <class name = "com.demowebshop.TestCases.RegistrationTest"/>
+      <!--       <class name = "com.demowebshop.TestCases.RegistrationTest"/> -->
+            <class name = "com.demowebshop.TestCases.LoginTest"/>
         </classes>
     </test>
 </suite>
