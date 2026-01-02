@@ -16,7 +16,7 @@ public class LoginDataProvider {
             for(int j=0;j<colCount;j++){
                 data[i-1][j] = ExcelUtil.getExcelData(i, j);
             }
-        }
+        } 
         return data;
     }
 }
