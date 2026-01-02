@@ -1,0 +1,8 @@
+<suite name="Login Suite">
+  <test thread-count="5" name="Login Test">
+  </test> 
+  <classes>
+            <class name = "com.demowebshop.TestCases.RegistrationTest"/>
+        </classes>
+        <!-- Login Test -->
+</suite> <!-- Login Suite -->
