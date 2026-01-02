@@ -6,10 +6,11 @@ import com.demowebshop.Base.BaseTest;
 import com.demowebshop.Dataproviders.LoginDataProvider;
 import com.demowebshop.PageObjects.BasePage;
 import com.demowebshop.PageObjects.LoginPage;
+import com.demowebshop.Utilities.Readconfig;
 
 import junit.framework.Assert;
 
-public class LoginTest extends BaseTest{
+public class TC_LoginDDTest_003 extends BaseTest{
 
 	@BeforeClass
 	public void beforLoginTest() {
@@ -17,7 +18,7 @@ public class LoginTest extends BaseTest{
 		basePage.clickLoginLink();
 	}
 	
-	@Test(dataProvider = "LoginData", dataProviderClass = LoginDataProvider.class)
+	@Test(description = "XRAY-DEM-138",  dataProvider = "LoginData", dataProviderClass = LoginDataProvider.class)
 	public void tc_LoginWithDataProvider(String emaiId, String password, String ExpectedResult, String ExpectedMessgae) {
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterLoginEmail(emaiId);
