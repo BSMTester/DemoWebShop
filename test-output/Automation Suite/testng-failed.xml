@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Automation Suite]">
-  <test thread-count="5" name="Registration(failed)">
+  <test thread-count="5" name="Login Test(failed)">
     <classes>
-      <class name="com.demowebshop.TestCases.RegistrationTest">
+      <class name="com.demowebshop.TestCases.TC_LoginTest_002">
         <methods>
-          <include name="TC_All_MandatoryFieldsFilledCorrectly"/>
           <include name="setup"/>
-          <include name="TC_Register_with_valid_data"/>
           <include name="tearDown"/>
-          <include name="tc_ValidEmailIdandInvalidPassword"/>
-          <include name="beforeRegistrationTest"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.demowebshop.TestCases.RegistrationTest -->
+      </class> <!-- com.demowebshop.TestCases.TC_LoginTest_002 -->
     </classes>
-  </test> <!-- Registration(failed) -->
+  </test> <!-- Login Test(failed) -->
 </suite> <!-- Failed suite [Automation Suite] -->
