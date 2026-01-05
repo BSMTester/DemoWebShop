@@ -9,7 +9,7 @@ import com.demowebshop.Utilities.Readconfig;
 
 public class TC_LoginTest_002 extends BaseTest {
 
-	@Test
+	@Test(description = "DEM-91", groups =  "smoke")
 	public void loginTest() {
 		Readconfig readconfig = new Readconfig();
 		driver.get(readconfig.getApplicationUrl());

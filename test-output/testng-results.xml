@@ -1,249 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-02T19:39:45 IST" name="Automation Suite" finished-at="2026-01-02T19:41:06 IST" duration-ms="81494">
+  <suite started-at="2026-01-05T18:13:51 IST" name="Smoke Suite" finished-at="2026-01-05T18:14:14 IST" duration-ms="23754">
     <groups>
+      <group name="smoke">
+        <method signature="TC_LoginTest_002.loginTest()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" name="loginTest" class="com.demowebshop.TestCases.TC_LoginTest_002"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-01-02T19:39:45 IST" name="Registration" finished-at="2026-01-02T19:41:06 IST" duration-ms="81494">
-      <class name="com.demowebshop.TestCases.TC_LoginDDTest_003">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:21 IST" name="setup" finished-at="2026-01-02T19:40:40 IST" duration-ms="19422" status="PASS">
+    <test started-at="2026-01-05T18:13:51 IST" name=" smoke Test" finished-at="2026-01-05T18:14:14 IST" duration-ms="23754">
+      <class name="com.demowebshop.TestCases.TC_LoginTest_002">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" started-at="2026-01-05T18:13:51 IST" name="setup" finished-at="2026-01-05T18:14:06 IST" duration-ms="15129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforLoginTest()[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:40 IST" name="beforLoginTest" finished-at="2026-01-02T19:40:43 IST" duration-ms="2174" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" started-at="2026-01-05T18:14:06 IST" name="loginTest" finished-at="2026-01-05T18:14:10 IST" duration-ms="4012" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforLoginTest -->
-        <test-method signature="tc_LoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:47 IST" name="tc_LoginWithDataProvider" description="XRAY-DEM-138" data-provider="LoginData" finished-at="2026-01-02T19:40:48 IST" duration-ms="1604" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Error]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Login was unsuccessful. Please correct the errors and try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LoginWithDataProvider -->
-        <test-method signature="tc_LoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:48 IST" name="tc_LoginWithDataProvider" description="XRAY-DEM-138" data-provider="LoginData" finished-at="2026-01-02T19:40:50 IST" duration-ms="1867" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ramkrish]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Error]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Login was unsuccessful. Please correct the errors and try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LoginWithDataProvider -->
-        <test-method signature="tc_LoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:50 IST" name="tc_LoginWithDataProvider" description="XRAY-DEM-138" data-provider="LoginData" finished-at="2026-01-02T19:40:52 IST" duration-ms="1791" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ramakrisha6789@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Error]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Login was unsuccessful. Please correct the errors and try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LoginWithDataProvider -->
-        <test-method signature="tc_LoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:52 IST" name="tc_LoginWithDataProvider" description="XRAY-DEM-138" data-provider="LoginData" finished-at="2026-01-02T19:40:53 IST" duration-ms="1223" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcdef@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Error]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Login was unsuccessful. Please correct the errors and try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LoginWithDataProvider -->
-        <test-method signature="tc_LoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:53 IST" name="tc_LoginWithDataProvider" description="XRAY-DEM-138" data-provider="LoginData" finished-at="2026-01-02T19:40:55 IST" duration-ms="1953" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[abc123]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Error]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Login was unsuccessful. Please correct the errors and try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LoginWithDataProvider -->
-        <test-method signature="tc_LoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:55 IST" name="tc_LoginWithDataProvider" description="XRAY-DEM-138" data-provider="LoginData" finished-at="2026-01-02T19:40:57 IST" duration-ms="1932" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abcdef@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Error]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Login was unsuccessful. Please correct the errors and try again.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LoginWithDataProvider -->
-        <test-method signature="tc_LoginWithDataProvider(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:57 IST" name="tc_LoginWithDataProvider" description="XRAY-DEM-138" data-provider="LoginData" finished-at="2026-01-02T19:40:59 IST" duration-ms="2132" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ramakrisha6789@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ramkrish]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Success]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[https://demowebshop.tricentis.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_LoginWithDataProvider -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.TC_LoginDDTest_003@1ce24091]" started-at="2026-01-02T19:40:59 IST" name="tearDown" finished-at="2026-01-02T19:41:06 IST" duration-ms="7105" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" started-at="2026-01-05T18:14:10 IST" name="tearDown" finished-at="2026-01-05T18:14:14 IST" duration-ms="4493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.TestCases.TC_LoginDDTest_003 -->
-      <class name="com.demowebshop.TestCases.RegistrationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:39:45 IST" name="setup" finished-at="2026-01-02T19:40:04 IST" duration-ms="19362" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeRegistrationTest()[pri:0, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:05 IST" name="beforeRegistrationTest" finished-at="2026-01-02T19:40:07 IST" duration-ms="2363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeRegistrationTest -->
-        <test-method signature="TC_Register_with_valid_data()[pri:1, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:07 IST" name="TC_Register_with_valid_data" description="XRAY-DEM-67" finished-at="2026-01-02T19:40:09 IST" duration-ms="2144" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_Register_with_valid_data -->
-        <test-method is-config="true" signature="beforeRegistrationTest()[pri:0, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:09 IST" name="beforeRegistrationTest" finished-at="2026-01-02T19:40:11 IST" duration-ms="1737" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeRegistrationTest -->
-        <test-method signature="TC_All_MandatoryFieldsFilledCorrectly()[pri:2, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:11 IST" name="TC_All_MandatoryFieldsFilledCorrectly" description="XRAY-DEM-79" finished-at="2026-01-02T19:40:12 IST" duration-ms="1164" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_All_MandatoryFieldsFilledCorrectly -->
-        <test-method is-config="true" signature="beforeRegistrationTest()[pri:0, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:12 IST" name="beforeRegistrationTest" finished-at="2026-01-02T19:40:13 IST" duration-ms="1014" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeRegistrationTest -->
-        <test-method signature="tc_ValidEmailIdandInvalidPassword()[pri:3, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:13 IST" name="tc_ValidEmailIdandInvalidPassword" description="XRAY-DEM-80" finished-at="2026-01-02T19:40:14 IST" duration-ms="1105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_ValidEmailIdandInvalidPassword -->
-        <test-method is-config="true" signature="beforeRegistrationTest()[pri:0, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:14 IST" name="beforeRegistrationTest" finished-at="2026-01-02T19:40:15 IST" duration-ms="934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeRegistrationTest -->
-        <test-method signature="tc_InvalidEmailandValidPassword()[pri:4, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:15 IST" name="tc_InvalidEmailandValidPassword" description="XRAY-DEM-81" finished-at="2026-01-02T19:40:17 IST" duration-ms="1700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_InvalidEmailandValidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.RegistrationTest@3eb25e1a]" started-at="2026-01-02T19:40:17 IST" name="tearDown" finished-at="2026-01-02T19:40:21 IST" duration-ms="4211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.TestCases.RegistrationTest -->
-    </test> <!-- Registration -->
-  </suite> <!-- Automation Suite -->
+      </class> <!-- com.demowebshop.TestCases.TC_LoginTest_002 -->
+    </test> <!--  smoke Test -->
+  </suite> <!-- Smoke Suite -->
 </testng-results>
