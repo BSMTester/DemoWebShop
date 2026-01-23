@@ -72,4 +72,12 @@ public class Readconfig {
 	public String getEmailErrMsg(){
 		return prop.getProperty("EmailErrMsg");
 	}
+	
+	public String getLoginFirstName() {
+		return prop.getProperty("LoginFirstname");
+	}
+	
+	public String getLoginLastName() {
+		return prop.getProperty("LoginLastname");
+	}
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demowebshop.TestCases.OpenBrouser">
+      <class name="com.demowebshop.TestCases.TC_ViewProfileTest_004">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="openFirefox"/>
+          <include name="viewProfileTest"/>
         </methods>
-      </class> <!-- com.demowebshop.TestCases.OpenBrouser -->
+      </class> <!-- com.demowebshop.TestCases.TC_ViewProfileTest_004 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,27 +2,27 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-05T18:13:51 IST" name="Smoke Suite" finished-at="2026-01-05T18:14:14 IST" duration-ms="23754">
+  <suite started-at="2026-01-23T14:50:08 IST" name="DependsOnSuite" finished-at="2026-01-23T14:50:16 IST" duration-ms="7908">
     <groups>
-      <group name="smoke">
-        <method signature="TC_LoginTest_002.loginTest()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" name="loginTest" class="com.demowebshop.TestCases.TC_LoginTest_002"/>
-      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="TC_ViewProfileTest_004.viewProfileTest()[pri:0, instance:com.demowebshop.TestCases.TC_ViewProfileTest_004@29647f75]" name="viewProfileTest" class="com.demowebshop.TestCases.TC_ViewProfileTest_004"/>
+      </group> <!-- login -->
     </groups>
-    <test started-at="2026-01-05T18:13:51 IST" name=" smoke Test" finished-at="2026-01-05T18:14:14 IST" duration-ms="23754">
-      <class name="com.demowebshop.TestCases.TC_LoginTest_002">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" started-at="2026-01-05T18:13:51 IST" name="setup" finished-at="2026-01-05T18:14:06 IST" duration-ms="15129" status="PASS">
+    <test started-at="2026-01-23T14:50:08 IST" name="DependsOnTest" finished-at="2026-01-23T14:50:16 IST" duration-ms="7908">
+      <class name="com.demowebshop.TestCases.TC_ViewProfileTest_004">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demowebshop.TestCases.TC_ViewProfileTest_004@29647f75]" started-at="2026-01-23T14:49:56 IST" name="setup" finished-at="2026-01-23T14:50:08 IST" duration-ms="12157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" started-at="2026-01-05T18:14:06 IST" name="loginTest" finished-at="2026-01-05T18:14:10 IST" duration-ms="4012" status="PASS">
+        <test-method signature="viewProfileTest()[pri:0, instance:com.demowebshop.TestCases.TC_ViewProfileTest_004@29647f75]" started-at="2026-01-23T14:50:08 IST" name="viewProfileTest" description="DEM-286" finished-at="2026-01-23T14:50:16 IST" duration-ms="7678" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.TC_LoginTest_002@41c2284a]" started-at="2026-01-05T18:14:10 IST" name="tearDown" finished-at="2026-01-05T18:14:14 IST" duration-ms="4493" status="PASS">
+        </test-method> <!-- viewProfileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demowebshop.TestCases.TC_ViewProfileTest_004@29647f75]" started-at="2026-01-23T14:50:16 IST" name="tearDown" finished-at="2026-01-23T14:50:20 IST" duration-ms="4422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demowebshop.TestCases.TC_LoginTest_002 -->
-    </test> <!--  smoke Test -->
-  </suite> <!-- Smoke Suite -->
+      </class> <!-- com.demowebshop.TestCases.TC_ViewProfileTest_004 -->
+    </test> <!-- DependsOnTest -->
+  </suite> <!-- DependsOnSuite -->
 </testng-results>

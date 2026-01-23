@@ -11,15 +11,14 @@ import com.demowebshop.Utilities.Readconfig;
 import junit.framework.Assert;
 
 public class TC_LoginDDTest_003 extends BaseTest{
-
-	@BeforeClass
-	public void beforLoginTest() {
-		BasePage basePage = new BasePage(driver);
-		basePage.clickLoginLink();
-	}
 	
 	@Test(description = "XRAY-DEM-138",  dataProvider = "LoginData", dataProviderClass = LoginDataProvider.class)
 	public void tc_LoginWithDataProvider(String emaiId, String password, String ExpectedResult, String ExpectedMessgae) {
+		Readconfig readconfig = new Readconfig();
+		driver.get(readconfig.getApplicationUrl());
+		BasePage basePage = new BasePage(driver);
+		basePage.clickLoginLink();
+		
 		LoginPage loginPage = new LoginPage(driver);
 		loginPage.enterLoginEmail(emaiId);
 		loginPage.enterLoginPassword(password);

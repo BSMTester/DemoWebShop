@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class LoginPage {
+public class LoginPage  {
 
     WebDriver driver;
     WebDriverWait wait;
@@ -20,7 +20,7 @@ public class LoginPage {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    @FindBy(id="Email")
+	@FindBy(id="Email")
     WebElement emailTestBox;
 
     @FindBy(name = "Password")
